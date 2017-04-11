@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TravelGuide</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">  
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="steps">
+		<div class="container">
+			<div class="header-inner">
+				<div class="row">
+					<div class="col-sm-3">
+						<div class="logo">
+							<a href="#"><img src="images/step-logo.png"></a>
+						</div>
+					</div>
+					<div class="col-sm-9">
+						<div class="nav-header">
+							<ul>
+								<li class="active"><a href="#">Home</a></li> 
+								<li><a href="#">Instant Online Quote </a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!-- header-inner end -->
+		</div>
+	</div><!-- main-header end -->
+
+	<div class="steps-section">
+		<div class="container">
+			<div class="steps-main main-pre-nxt">
+				<div class="stepwizard ">
+					<div class="stepwizard-row setup-panel">
+						<div class="stepwizard-step">
+							<a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+							<p>Product Details</p>
+						</div>
+						<div class="stepwizard-step">
+							<a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+							<p>Your Details</p>
+						</div>
+						<div class="stepwizard-step">
+							<a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+							<p>Payment Options</p>
+						</div>
+						<div class="stepwizard-step">
+							<a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+							<p>Payment Details</p>
+						</div>
+					</div>
+				</div>
+				<form role="form">
+					<div class="row setup-content" id="step-1">
+						<div class="col-xs-12">
+							<div class="col-md-12 onestep">
+								<h2>Your Gadget Details</h2>
+
+
+								<div class="form-group-wrapper">
+									<div class="form-group-main">
+										<div class="form-group">
+											<label class="control-label">Gadget</label>
+											<select class="bootstrap-select" required="" >
+												<option value="">Select Gadget </option>
+												<option value="">Tablet</option>
+												<option value="">Mobile</option>
+												<option value="">Mouse</option>
+												<option value="">LCD</option>
+											</select>
+											<!--  <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Select Gadget" /> -->
+										</div>
+										<div class="form-group">
+											<label class="control-label">make</label>
+											<select class="bootstrap-select" required="">
+												<option value="">Select Make</option>
+												<option value="">Apple</option>
+												<option value="">Samsung</option>
+												<option value="">Sony</option>
+												<option value="">HTC</option>
+											</select>
+											<!--  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Select Make" /> -->
+										</div>
+										<div class="form-group">
+											<label class="control-label">Model</label>
+											<select class="bootstrap-select" required="">
+												<option value="">Select Model</option>
+												<option value="">Iphon 7</option>
+												<option value="">Samsung galaxy</option>
+												<option value="">Sony Xperia</option>
+												<option value="">HTC desire 628</option>
+											</select>
+											<!-- <input  maxlength="100" type="text" required="required" class="form-control" placeholder="Select Model"/> -->
+										</div>
+										<div class="form-group hidden">
+											<label class="control-label">Cover Level <span class="ques">?</span></label>
+											<select class="bootstrap-select" required="">
+												<option value="">Select Value</option>
+												<option value="">Level 1</option>
+												<option value="">Level 2</option>
+												<option value="">Levle 3</option>
+												<option value="">Level 4</option>
+											</select>
+											<!--  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Select Value" /> -->
+										</div>
+										<div class="form-group">
+											<label class="control-label">Purchase Price<span class="ques">?</span></label>
+											<select class="bootstrap-select" required="">
+												<option value="">Select Value</option>
+												<option value="1">Up to &pound;100</option>
+												<option value="2">Up to &pound;200</option>
+												<option value="3">Up to &pound;3500</option>
+
+											</select>
+											<!--  <input maxlength="100" type="text" required="required" class="form-control" placeholder="Select Value" /> -->
+										</div>
+										<div class="add-another-wrapper">
+											<div class="add-another">
+												<p><a id="Add-Gadget" onclick="AddProduct();">+</a></p>
+												Add Another Appliance
+												<span id="Add-Gadget-Percentage">TO GET 15% OFF</span>
+											</div>
+										</div>
+
+
+
+
+
+										<!-- <div class="form-btn">
+											<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+										</div> -->
+									</div>
+
+
+
+
+								</div>
+
+							</div>
+
+
+
+
+
+						</div>
+					</div>
+					<div class="row setup-content" id="step-2">
+						<div class="col-xs-12">
+							<div class="col-md-12">
+								<h2>Your Details</h2>
+								<div class="form-group-main"> 
+									<div class="form-group">
+										<label class="control-label">Title</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Please Select" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Forename</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Forename"  />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Surname</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Surname" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Date of Birth</label>
+										<select class="form-control-selector" name="country" required="required">
+											<option value="">DD</option>
+											<option value="fr">1</option>
+											<option value="de">2</option>
+											<option value="it">3</option>
+											<option value="jp">4</option>
+											<option value="ru">5</option>
+											<option value="gb">6</option>
+											<option value="us">7</option>
+											<option value="us">8</option>
+											<option value="us">9</option>
+											<option value="us">10</option>
+											<option value="us">11</option>
+											<option value="us">12</option>
+											<option value="us">13</option>
+											<option value="us">14</option>
+											<option value="us">15</option>
+											<option value="us">16</option>
+											<option value="us">17</option>
+											<option value="us">18</option>
+											<option value="us">19</option>
+											<option value="us">20</option>
+											<option value="us">21</option>
+											<option value="us">22</option>
+											<option value="us">23</option>
+											<option value="us">24</option>
+											<option value="us">25</option>
+											<option value="us">26</option>
+											<option value="us">27</option>
+											<option value="us">28</option>
+											<option value="us">29</option>
+											<option value="us">30</option>
+											<option value="us">31</option>
+										</select>
+										<select class="form-control-selector" name="country" required="required">
+											<option value="">MM</option>
+											<option value="fr">January</option>
+											<option value="de">February</option>
+											<option value="it">March</option>
+											<option value="jp">April</option>
+											<option value="ru">May</option>
+											<option value="gb">June</option>
+											<option value="us">July</option>
+											<option value="us">August</option>
+											<option value="us">September</option>
+											<option value="us">October</option>
+											<option value="us">November</option>
+											<option value="us">December</option>
+										</select>
+										<select class="form-control-selector" name="country" required="required">
+											<option value="">YY</option>
+											<option value="fr">1984</option>
+											<option value="de">1985</option>
+											<option value="it">1986</option>
+											<option value="jp">1987</option>
+											<option value="ru">1988</option>
+											<option value="gb">1989</option>
+											<option value="us">1990</option>
+											<option value="us">1991</option>
+											<option value="us">1992</option>
+											<option value="us">1993</option>
+											<option value="us">1994</option>
+											<option value="us">1995</option>
+											<option value="us">1996</option>
+											<option value="us">1997</option>
+											<option value="us">1998</option>
+											<option value="us">1999</option>
+											<option value="us">2000</option>
+											<option value="us">2001</option>
+											<option value="us">2002</option>
+											<option value="us">2003</option>
+											<option value="us">2004</option>
+											<option value="us">2005</option>
+											<option value="us">2006</option>
+											<option value="us">2007</option>
+											<option value="us">2009</option>
+											<option value="us">2010</option>
+											<option value="us">2011</option>
+											<option value="us">2012</option>
+											<option value="us">2013</option>
+											<option value="us">2014</option>
+											<option value="us">2015</option>
+											<option value="us">2016</option>
+											<option value="us">2017</option>
+										</select>
+									</div>
+								</div>
+								<span class="line"></span>
+								<div class="form-group-main"> 
+									<div class="form-group">
+										<label class="control-label">Postcode</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Postcode" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Email Address</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Email Address"  />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Company Name</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Confirm Email Address" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Confirm Email Address</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Mobile Phone Number"  />
+									</div>
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="vehicle" value="Bike"> I confirm that I have read and understood the gadget terms and conditions here, the appliance terms and conditions here and the fraud policy available here. I also confirm that I am a permanent UK resident, that my gadgets are under 12 months old and appliances are under 6 years old and that they was purchased as new from a UK VAT registered retailer and are in full working order.
+										</label>
+									</div>
+								</div>
+								<div class="form-btn">
+									<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >prev</button>
+									<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row setup-content" id="step-3">
+						<div class="col-xs-12">
+							<div class="col-md-12">
+								<h2>Your Details</h2>
+								<div class="form-group-main"> 
+									<div class="checkbox-step3">
+										<label>
+											<input type="radio" name="gender" value="Credit Card" required="required"> Credit Card 
+										</label>
+									</div>
+									<div class="checkbox-step3">
+										<label>
+											<input type="radio" name="gender" value="Debit Card" required="required"> Debit Card 
+										</label>
+									</div>
+									<div class="checkbox-step3">
+										<label>
+											<input type="radio" name="gender" value="Cash On Delivery " required="required"> Cash On Delivery 
+										</label>
+									</div>
+								</div>
+								<div class="form-btn">
+									<button class="btn btn-primary nextBtn btn-lg pull-right pull-left" type="button" >prev</button>
+									<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row setup-content" id="step-4">
+						<div class="col-xs-12">
+							<div class="col-md-12">
+								<h2>Your Details</h2>
+								<div class="step-card">
+									<ul>
+										<li><a href="#"><img src="images/steps-card.png"></a></li>
+										<li><a href="#"><img src="images/steps-card1.png"></a></li>
+										<li><a href="#"><img src="images/steps-card2.png"></a></li>
+									</ul>
+								</div>
+								<div class="form-group-main"> 
+									<div class="form-group">
+										<label class="control-label">name of the Card</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Name of the card" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Long card No</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="Long Card No"  />
+									</div>
+									<div class="form-group">
+										<label class="control-label">Expiration Date</label>
+										<input id="datepicker4" maxlength="200" type="text" required="required" class="form-control" placeholder="Expiration Date" />
+									</div>
+									<div class="form-group">
+										<label class="control-label">CV2/Security Code</label>
+										<input maxlength="200" type="text" required="required" class="form-control" placeholder="CV2/Security Code"  />
+									</div>
+								</div>
+								<div class="form-btn">
+									<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >prev</button>
+									<button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+								</div>
+							</div>
+						</div>
+					</div>
+			    <!-- <div class="row setup-content" id="step-4">
+			        <div class="col-xs-12">
+			            <div class="col-md-12">
+			                <h3> Step 3</h3>
+			                <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
+			            </div>
+			        </div>
+			    </div> -->
+			</form>
+		</div>
+
+		<div class="summary-main-container">
+			<div class="summary-inner-container">
+				<div id="QuoteCost" class="quote-summary collapse col-md-9 col-sm-9" style="display: block;">
+					Only <strong id="MonthlyCost">£5.21</strong> a month
+					<span id="QuoteIncludes" class="collapse" style="display: inline;">including <strong id="MonthlyDiscount">5%</strong> off</span>
+					<div id="QuoteYearly" class="collapse" style="display: block;">Or get <strong><span id="YearlyDiscount">10%</span> off</strong> and pay just <span id="YearlyCost">£59.18</span> annually!</div>
+					<img class="hidden-xs" src="images/quote-background.png" alt="White background">
+					<div class="hidden-sm hidden-md hidden-lg">
+						<div class="review-stars-rating">
+							<div>
+								4.7 Google rating
+							</div>
+							<div class="start-container">
+								<img src="./images/BannerStars.png" alt="Five star reviews">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="QuoteNext" class="collapse col-md-3 col-sm-3" style="display: block;">
+
+					<form action="#" autocomplete="off" method="post" onsubmit="Toggle(true);">                    <button type="submit" class="button-fat fullWidth">Next<img src="./images/arrow-right.png" alt="Next"></button>
+					</form>            </div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="copyright-section">
+		<div class="container">
+			<p>&copy; 2017 TravelGuide. All Rights Reserved.</p>
+		</div>
+	</div>
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/starwarsjs.js"></script>
+	<script>
+		jQuery(document).ready(function () {
+			jQuery('.nav-header').meanmenu();
+		});
+
+
+		$( document ).ready(function() {
+			$('.rate_row').starwarsjs({
+				stars : 5,
+				count : 1
+			});
+
+		});
+
+
+		$(document).ready(function () {
+
+			var navListItems = $('div.setup-panel div a'),
+			allWells = $('.setup-content'),
+			allNextBtn = $('.nextBtn');
+
+			allWells.hide();
+
+			navListItems.click(function (e) {
+				e.preventDefault();
+				var $target = $($(this).attr('href')),
+				$item = $(this);
+
+				if (!$item.hasClass('disabled')) {
+					navListItems.removeClass('btn-primary').addClass('btn-default');
+					$item.addClass('btn-primary');
+					allWells.hide();
+					$target.show();
+					$target.find('input:eq(0)').focus();
+				}
+			});
+
+			allNextBtn.click(function(){
+				var curStep = $(this).closest(".setup-content"),
+				curStepBtn = curStep.attr("id"),
+				nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+				curInputs = curStep.find("input[type='text'],input[type='url']"),
+				isValid = true;
+
+				$(".form-group").removeClass("has-error");
+				for(var i=0; i<curInputs.length; i++){
+					if (!curInputs[i].validity.valid){
+						isValid = false;
+						$(curInputs[i]).closest(".form-group").addClass("has-error");
+					}
+				}
+
+				if (isValid)
+					nextStepWizard.removeAttr('disabled').trigger('click');
+			});
+
+			$('div.setup-panel div a.btn-primary').trigger('click');
+
+			$( function() {
+				$( "#datepicker4" ).datepicker();
+			} );
+		});
+
+
+
+
+	</script>
+</body>
+</html>

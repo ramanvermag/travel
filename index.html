@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TravelGuide</title>
+	<meta charset="UTF-8">
+  	<meta name="description" content="">
+  	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">  
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/meanmenu.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div class="main-header">
+	<div class="container">
+		<div class="header-inner">
+			<div class="row">
+			<div class="col-sm-3">
+				<div class="logo">
+					<a href="#"><img src="images/logo.png"></a>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="nav-header">
+					<ul>
+						<li class="active"><a href="#">Home</a></li> 
+						<li><a href="#">Instant Online Quote </a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			</div>
+			<h1>Get Instant quote in less than 30 seconds</h1>
+		</div><!-- header-inner end -->
+	    <div class="row">
+    	    <div class="panel with-nav-tabs panel-default cls-dept">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#tab1default" data-toggle="tab">One Way</a></li>
+                        <li><a href="#tab2default" data-toggle="tab">Return</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1default">
+                    		<div class="header-form">
+                    		<div class="row">
+                    			<div class="col-sm-4">
+	                    			<label>Depart From:</label>
+	                    			<input type="text" name="name" placeholder="Depart From">
+	                    			<i class="fa fa-home" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Drop-off Location</label>
+	                    			<input type="text" name="name" placeholder="Drop-off Location">
+	                    			<i class="fa fa-map-marker" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Via Location</label>
+	                    			<input type="text" name="name" placeholder="Via Location">
+	                    			<i class="fa fa-map-marker" aria-hidden="true"></i>
+	                    		</div>
+	                    		</div>
+	                    		<div class="row">
+	                    		<div class="col-sm-4">
+	                    			<label>Pickup Date/Time</label>
+	                    			<div class="form-date-time">
+	                    				<input id="datepicker" type="text" name="name" placeholder="Select Date" >
+	                    				<i class="fa fa-calendar" aria-hidden="true"></i>
+	                    				<input id="timepicker1" type="text" name="name" placeholder="Select-time">
+	                    				<i class="fa fa-clock-o" aria-hidden="true"></i>
+	                    			</div>
+	                    		</div>
+	                    		<!-- <div class="col-sm-4">
+	                    			<label>Pickup Date/Time</label>
+	                    			<div class="form-date-time">
+	                    				<input id="datepicker1" type="text" name="name" placeholder="Select Date" >
+	                    				<i class="fa fa-calendar" aria-hidden="true"></i>
+	                    				<input id="timepicker1" type="text" name="name" placeholder="Select-time">
+	                    				<i class="fa fa-clock-o" aria-hidden="true"></i>
+	                    			</div>
+	                    		</div> -->
+	                    		<div class="col-sm-4">
+	                    			<label>No. of Pax</label>
+	                    			<input type="text" name="name" placeholder="No. of Pax">
+	                    			<i class="fa fa-user" aria-hidden="true"></i>
+	                    		</div>
+	                    		</div>
+	                    		<div class="row">
+                    			<div class="col-sm-4">
+	                    			<label>Full Name</label>
+	                    			<input type="text" name="name" placeholder="Full Name">
+	                    			<i class="fa fa-user" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Email Address</label>
+	                    			<input type="email" name="email" placeholder="Email Address">
+	                    			<i class="fa fa-envelope" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Phone/Mobile</label>
+	                    			<input type="text" name="name" placeholder="Phone/Mobile">
+	                    			<i class="fa fa-phone" aria-hidden="true"></i>
+	                    		</div>
+	                    		</div>
+	                    		 
+	                    	</div>
+                        </div>
+                        <div class="tab-pane fade" id="tab2default">
+                      	<div class="header-form">
+	                    		<div class="col-sm-4">
+	                    			<label>Pick-up Location</label>
+	                    			<input type="text" name="name" placeholder="Pick-up Location">
+	                    			<i class="fa fa-map-marker" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Drop-off Location</label>
+	                    			<input type="text" name="name" placeholder="Drop-off Location">
+	                    			<i class="fa fa-map-marker" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Via Location</label>
+	                    			<input type="text" name="name" placeholder="Via Location">
+	                    			<i class="fa fa-map-marker" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Pickup</label>
+	                    			<div class="form-date-time">
+	                    				<input id="datepicker3" type="text" name="name" placeholder="Select Date" >
+	                    				<i class="fa fa-calendar" aria-hidden="true"></i>
+	                    				<input id="timepicker4" type="text" name="name" placeholder="Select-time">
+	                    				<i class="fa fa-clock-o" aria-hidden="true"></i>
+	                    			</div>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Return</label>
+	                    			<div class="form-date-time">
+	                    				<input id="datepicker2" type="text" name="name" placeholder="Select Date" >
+	                    				<i class="fa fa-calendar" aria-hidden="true"></i>
+	                    				<input id="timepicker3" type="text" name="name" placeholder="Select-time">
+	                    				<i class="fa fa-clock-o" aria-hidden="true"></i>
+	                    			</div>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>No. of Pax</label>
+	                    			<input type="text" name="name" placeholder="No. of Pax">
+	                    			<i class="fa fa-user" aria-hidden="true"></i>
+	                    		</div>
+                      			<div class="col-sm-4">
+	                    			<label>Full Name</label>
+	                    			<input type="text" name="name" placeholder="Full Name">
+	                    			<i class="fa fa-user" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Phone/Mobile</label>
+	                    			<input type="text" name="name" placeholder="Phone/Mobile">
+	                    			<i class="fa fa-phone" aria-hidden="true"></i>
+	                    		</div>
+	                    		<div class="col-sm-4">
+	                    			<label>Email Address</label>
+	                    			<input type="email" name="email" placeholder="Email Address">
+	                    			<i class="fa fa-envelope" aria-hidden="true"></i>
+	                    		</div>
+	                    		 
+	                    	</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+	    </div>
+	    <div class="form-btn-new">
+			<a href="steps.html" target="_blank">Get Quote</a> 
+				 
+		</div>
+		
+	</div>
+</div><!-- main-header end -->
+
+<div class="listing-section">
+	<div class="container">
+		<div class="list-inner">
+			<!-- <div class="price-section">
+				<h4>Sort By:</h4>
+				<select>
+					<option>Price</option>
+					<option>Rs.650</option>
+					<option>Rs.950</option>
+					<option>Rs.550</option>
+					<option>Rs.250</option>
+				</select>
+			</div> -->
+			<div class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<!-- <h3>Per Person<br><strong>£245.89</strong></h3> -->
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					
+
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div id="hideshow" class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div id="hideshow" class="listing-desn">
+				<div class="desn-inner-left">
+					<img src="images/list-img.jpg">
+					<div class="star-part">
+						<h2>This is first heading.</h2>
+						<div class="wrap_form">
+				            <div class="rate_row"></div>
+				        </div><!--.wrap_form-->
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+						<div class="pound-icon">
+						<img src="images/pound-icon.png">
+						<h2>&pound;245.89</h2>
+					</div>
+
+					</div>
+				</div>
+				<div class="desn-inner-right">
+					<div class="right-white-section">
+						<img src="images/icon-white.png">
+						<h2>&pound;245.89</h2>
+					</div>
+					<div class="btn-price"><a href="#">book now</a></div>
+				</div>
+			</div><!-- listing-desn end -->
+			<div class="load-btn">
+				<a href="#" >load more</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="copyright-section">
+	<div class="container">
+		<p>&copy; 2017 TravelGuide. All Rights Reserved.</p>
+	</div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.meanmenu.min.js"></script>
+<script src="js/starwarsjs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+   $( function() {
+    $( "#datepicker1" ).datepicker();
+  } );
+   $( function() {
+    $( "#datepicker2" ).datepicker();
+  } );
+   $( function() {
+    $( "#datepicker3" ).datepicker();
+  } );
+
+    $('#timepicker1').timepicker();
+    $('#timepicker2').timepicker();
+    $('#timepicker3').timepicker();
+    $('#timepicker4').timepicker();
+
+jQuery(document).ready(function () {
+	jQuery('.nav-header').meanmenu();
+});
+
+        $( document ).ready(function() {
+            $('.rate_row').starwarsjs({
+                stars : 5,
+                count : 1,
+                default_stars:5
+            });
+
+        });
+
+    </script>
+</body>
+</html>
